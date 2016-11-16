@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--指明当前的页面使用的语言环境-->
+<html lang="zh-CN">
+<head>
+    <!--指明当前页面的字符编码格式 是  utf-8 -->
+    <meta charset="utf-8">
+    <!--指明当前的页面在IE浏览器渲染的时候使用最新的渲染引擎来渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--标准的视口设置-->
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+
+    <title>Template</title>
+
+    <!-- Bootstrap -->
+    <!--bootstrap 核心css文件  -->
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--
+        在IE8一下都不支持 html5标签和媒体查询  引入两js插件
+        html5shiv 支持HTML5标签
+        respond  支持媒体查询  必须在http形式下访问才有用
+     -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="../lib/html5shiv/html5shiv.min.js"></script>
+    <script src="../lib/respond/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<!--navbar navbar-default  默认样式的 导航栏-->
+<nav class="navbar navbar-default">
+    <!--装内容的内容-->
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <!--汉堡菜单-->
+            <!--
+                data-toggle="collapse"  指明咱们这个组件是一个  手风琴 组件 collapse
+                data-target="#bs-example-navbar-collapse-1"  指明这个组件控制的是那个一个盒子
+            -->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <!--
+                screen read only
+                aria-* 属性
+                这些东西都是提供个屏幕阅读器使用
+                -->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--logo区域-->
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Link</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!--bootstrap是依赖jquery的-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../lib/jquery/jquery.min.js"></script>
+<!--bootstrap的核心js文件-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

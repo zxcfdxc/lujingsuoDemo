@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="font-size: 30px">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+        div:first-child{
+            font-size: 2em;/*默认是字体大小是16px*/
+            line-height: 1;
+        }
+        div:last-child{
+            font-size: 2rem;
+            /*不会根据父类元素的字体做改变  默认是的字体是16px*/
+            /*r  root   根节点 html  字体大小是根据 根节点  来定义*/
+            line-height: 1;
+        }
+        a{
+            width: 10rem;
+            height: 10rem;
+            display: block;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>AAA</div>
+    <div>AAA</div>
+    <a href="#">
+
+    </a>
+</body>
+</html>

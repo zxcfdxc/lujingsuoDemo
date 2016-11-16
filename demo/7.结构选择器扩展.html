@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+    +   E + E     选择的是当前的第一个E的下一个E元素
+    ~   E ~ E     选择的是  当前的这个E的下面多有的E元素
+
+    -->
+    <style>
+        div ~ div{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div class="aa">3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</body>
+</html>

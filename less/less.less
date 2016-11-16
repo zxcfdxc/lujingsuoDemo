@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*less 当中的语法   这样的注释会编译在css文件当中*/
+
+//这个样的注释是不会编译在css文件当中的，
+
+/* JS var mainColor = "#E92322" */
+
+/* LESS @变量名称：变量的值*/
+
+/*导入*/
+@import "var";
+
+/*函数  内置函数  简单的运算*/
+
+a{
+  color: darken(#fff,20%);
+  font-size: @fontSize;
+}
+a:hover{
+  color: @mainColor;
+  background: #333 + #333;
+}
+.red{
+  color: @mainColor;
+}
+
+
+/*定义方法*/
+.borderFuc(@radius:5px){
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+/*Mixin混入*/
+.redWordRedBorder{
+  /*直接试用其他已经有的样式*/
+  .red();
+  /*直接调用方法 使用方式*/
+  .borderFuc(10px);
+}
+.aaa{
+  .borderFuc(20px);
+}
+
+/*嵌套*/
+.wjs_topBar{
+  border: 1px solid #ccc;
+  font-size: 12px;
+  color: #666;
+  position: relative;
+  z-index: 1001;
+  a{
+    color: #666;
+    &:hover{
+      color: #666;
+    }
+  }
+  > .container{
+    > .row{
+      div{
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+      }
+    }
+  }
+}

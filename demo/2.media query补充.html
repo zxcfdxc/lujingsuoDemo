@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        /*版心容器*/
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            height: 1200px;
+            background: pink;
+        }
+        /*在phone设备  超小屏幕设备     要求在移动端   显示的背景是蓝色  100%   最大宽度是768px*/
+
+        @media screen and (max-width: 1200px) {
+            /*针对当前这个屏幕宽度区间做特色样式*/
+            .container{
+                width: 970px;
+                background: red;
+            }
+        }
+
+        @media screen and (max-width: 992px) {
+            /*针对当前这个屏幕宽度区间做特色样式*/
+            .container{
+                width: 750px;
+                background: green;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            /*针对当前这个屏幕宽度区间做特色样式*/
+            .container{
+                width: 100%;
+                background: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
